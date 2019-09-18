@@ -7,7 +7,7 @@ window.onload = () => {
   const markers = [];
 
   const map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 12,
+    zoom: 10,
     center: centerPoint,
   });
 

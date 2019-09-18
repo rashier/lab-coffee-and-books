@@ -1,4 +1,4 @@
-  <p>Welcome to {{title}}</p>	
+<p>Welcome to {{title}}</p>
 <a href="/new">Create a new place</a>
 
 <br></br>
@@ -10,15 +10,16 @@
 <script type="text/javascript" src="/javascripts/main.js"></script>
 
 <br></br>
+<div class="list-allplaces">
+  <h3 class="list-title">List of places</h3>
 
-<h3>List of places</h3 >
-
-<ul>
-  {{#each allPlaces}}
-  <li class="list-places  ">
-    <p class="name-place">{{name}}:   </p>
-    <a class="update-place" href="/{{_id}}">Update</a>
-    <a class="delete-place" href="/{{_id}}/delete">Delete</a>
-  </li>
-  {{/each}}
-</ul> 
+  <ol class="all-elements-list">
+    {{#each allPlaces}}
+    <li class="list-places  ">
+      <p class="name-place">{{name}}: </p>
+      <a class="update-place" href="/{{_id}}">Update</a>
+      <a class="delete-place" href="/{{_id}}/delete">Delete</a>
+    </li>
+    {{/each}}
+  </ol>
+</div>
