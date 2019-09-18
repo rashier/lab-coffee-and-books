@@ -1,5 +1,4 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>	
+  <p>Welcome to {{title}}</p>	
 <a href="/new">Create a new place</a>
 
 <br></br>
@@ -16,10 +15,10 @@
 
 <ul>
   {{#each allPlaces}}
-  <li>
-    <p>{{name}}</p>
-    <a href="/{{_id}}">Update</a>
-    <a href="/{{_id}}/delete">| Delete</a>
+  <li class="list-places  ">
+    <p class="name-place">{{name}}:   </p>
+    <a class="update-place" href="/{{_id}}">Update</a>
+    <a class="delete-place" href="/{{_id}}/delete">Delete</a>
   </li>
   {{/each}}
 </ul> 
